@@ -22,7 +22,7 @@ suite('Cross-Page Tests', function () {
                 done();
             });
         });
-    }); //change the git username or author
+    }); 
     test('visiting the "request group rate" page dirctly should result ' + 'in an empty referrer field', function (done) {
         browser.visit('http://localhost:3000/tours/request-group-rate', function () {
             assert(browser.field('referrer').value === ''); done();
